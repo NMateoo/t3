@@ -1,6 +1,29 @@
 'use strict';
 
 var color="white";
+
+var colorFr=new Array(
+    'blueviolet',
+    'royalblue',
+    'goldenrod',
+    'brown',
+    'lightsteelblue')
+
+var colorFn=new Array(
+    'white',
+    'blue',
+    'black',
+    'yellow',
+    'red')
+
+function pinturaInicial() {
+    for (var i=0;i<5;i++) {
+        let elemento=document.getElementById("c"+(i+1))
+        elemento.style.color=colorFn[i]
+        elemento.style.backgroundColor=colorFr[i]
+    } 
+}
+
 // function eligeColor() {
 //     color=prompt("Diga en que color quiere que se dibuje (azul, rojo, verde)","");
 
@@ -29,5 +52,6 @@ function saludar(identificador) {
     let cuadro=document.getElementById(id);
     cuadro.style.color=color;
     cuadro.innerHTML="Hola";
-    color=getComputedStyle(color).backgroundColor;
 }
+
+pinturaInicial()
