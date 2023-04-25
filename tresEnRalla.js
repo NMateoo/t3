@@ -1,5 +1,7 @@
 'use strict';
 
+let contador=0;
+
 function hover(id) {
     let cuadro=document.getElementById(id);
     cuadro.style.backgroundColor="rgb(63, 63, 63)";
@@ -13,4 +15,12 @@ function desmarcar(id) {
 function pintar(id) {
     let cuadro=document.getElementById(id);
     cuadro.innerHTML="x";
+    contador++;
+    if (contador==3) {
+
+    }
+}
+
+function creaArray() {
+    
 }
