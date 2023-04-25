@@ -17,10 +17,14 @@ function pintar(id) {
     cuadro.innerHTML="x";
     contador++;
     if (contador==3) {
-
+        alert("Has ganado")
     }
 }
 
 function creaArray() {
-    
+    let matriz=[
+        [0,0,0]
+        [0,0,0]
+        [0,0,0]
+    ]
 }
