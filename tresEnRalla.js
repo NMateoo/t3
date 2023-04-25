@@ -17,7 +17,7 @@ function pintar(id) {
     cuadro.innerHTML="x";
     contador++;
     if (contador==3) {
-        alert("Has ganado")
+        creaArray();
     }
 }
 
@@ -27,4 +27,5 @@ function creaArray() {
         [0,0,0]
         [0,0,0]
     ]
+    console.log(matriz)
 }
