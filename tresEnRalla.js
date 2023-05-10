@@ -1,6 +1,7 @@
 'use strict';
 
 let contador=0;
+let simbolo = "x";
 
 function hover(id) {
     let cuadro=document.getElementById(id);
@@ -13,19 +14,11 @@ function desmarcar(id) {
 }
 
 function pintar(id) {
-    let cuadro=document.getElementById(id);
-    cuadro.innerHTML="x";
-    contador++;
-    if (contador==3) {
-        creaArray();
-    }
-}
+  let cuadro = document.getElementById(id);
+  cuadro.innerHTML = simbolo;
+  contador++;
 
-function creaArray() {
-    let matriz=[
-        [0,0,0]
-        [0,0,0]
-        [0,0,0]
-    ]
-    console.log(matriz)
+  if (contador == 3) {
+    creaArray();
+  }
 }
